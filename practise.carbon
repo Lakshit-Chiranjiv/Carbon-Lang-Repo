@@ -9,6 +9,10 @@ fn Greet() -> String {
     return "Hello";
 }
 
+fn PrintMessage() {
+    Print("Some message");
+}
+
 //Main function should always return a 32 bit integer
 fn Main() -> i32 {
     Print("My name is Lakshit");
