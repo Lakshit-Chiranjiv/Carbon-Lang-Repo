@@ -3,5 +3,6 @@ package sample api;
 
 //Main function should always return a 32 bit integer
 fn Main() -> i32 {
-  return 0;
+    Print("My name is Lakshit");
+    return 0;
 }
