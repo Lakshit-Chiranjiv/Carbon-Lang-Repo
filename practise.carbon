@@ -5,6 +5,10 @@ fn ReturnTen() -> i32 {
     return 10;
 }
 
+fn Greet() -> String {
+    return "Hello";
+}
+
 //Main function should always return a 32 bit integer
 fn Main() -> i32 {
     Print("My name is Lakshit");
