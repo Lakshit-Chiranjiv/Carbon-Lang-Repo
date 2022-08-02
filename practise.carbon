@@ -17,5 +17,8 @@ fn PrintMessage() {
 fn Main() -> i32 {
     Print("My name is Lakshit");
     Print("I am {0} years old",20);
+    Print("{0}",ReturnTen());
+    Print(Greet());
+    PrintMessage();
     return 0;
 }
