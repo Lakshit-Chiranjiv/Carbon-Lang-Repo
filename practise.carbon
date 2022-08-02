@@ -13,6 +13,14 @@ fn PrintMessage() {
     Print("Some message");
 }
 
+fn VariablesCheck() {
+    var some_var: String = "Message 1";
+    Print(some_var);
+    some_var = "Message 1 Updated";
+    var num_var: i32 = 54;
+    Print("{0}",num_var);
+}
+
 //Main function should always return a 32 bit integer
 fn Main() -> i32 {
     Print("My name is Lakshit");
