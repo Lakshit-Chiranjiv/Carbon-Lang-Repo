@@ -48,6 +48,10 @@ fn MultiLineStrings() {
     Print(s);
 }
 
+fn Add(x: i32, y: i32) -> i32 {
+    return x+y;
+}
+
 //Main function should always return a 32 bit integer
 fn Main() -> i32 {
     Print("My name is Lakshit");
@@ -59,5 +63,7 @@ fn Main() -> i32 {
     AutoType();
     GlobalVariables();
     MultiLineStrings();
+    var ans: i32 = Add(44,24);
+    Print("sum = {0}",ans);
     return 0;
 }
