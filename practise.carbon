@@ -71,6 +71,20 @@ fn Tuples() {
     Print(t3[0]);
 }
 
+fn Structs() {
+    var car: auto = {.color = "Red",.speed = 96};
+    Print(car.color);
+    Print("{0}",car.speed);
+    car.speed = 120;
+    Print("{0}",car.speed);
+
+    var st: {.x: i32, .y: Bool} = {.x = 45, .y = true};
+    Print("{0}",st.x);
+    st.x = 32;
+    Print("{0}",st.x);
+
+}
+
 //Main function should always return a 32 bit integer
 fn Main() -> i32 {
     Print("My name is Lakshit");
@@ -87,5 +101,6 @@ fn Main() -> i32 {
 
     Arrays();
     Tuples();
+    Structs();
     return 0;
 }
