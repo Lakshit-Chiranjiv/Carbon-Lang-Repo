@@ -61,6 +61,13 @@ fn Arrays() {
     Print("{0}",arr3[1]);
 }
 
+fn Tuples() {
+    var t1: auto = (54,false,"Good morning",332);
+    Print("{0}",t1[3]);
+    var t2: (String,i32,i32,Bool) = ("str 1",43,56,false);
+    Print(t2[0]);
+}
+
 //Main function should always return a 32 bit integer
 fn Main() -> i32 {
     Print("My name is Lakshit");
@@ -76,5 +83,6 @@ fn Main() -> i32 {
     Print("sum = {0}",ans);
 
     Arrays();
+    Tuples();
     return 0;
 }
