@@ -52,6 +52,13 @@ fn Add(x: i32, y: i32) -> i32 {
     return x+y;
 }
 
+fn Arrays() {
+    var arr1: [i32;5] = (44,22,42,56,35);
+    var arr2: [String;3] = ("hello","bye","okay");
+    Print("{0}",arr1[3]);
+    Print(arr2[1]);
+}
+
 //Main function should always return a 32 bit integer
 fn Main() -> i32 {
     Print("My name is Lakshit");
@@ -65,5 +72,7 @@ fn Main() -> i32 {
     MultiLineStrings();
     var ans: i32 = Add(44,24);
     Print("sum = {0}",ans);
+
+    Arrays();
     return 0;
 }
