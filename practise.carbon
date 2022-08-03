@@ -27,6 +27,11 @@ fn VariablesCheck() {
     Print("{0} and {0}",num_var,var1);
 }
 
+fn AutoType() {
+    var x: auto = "Evening";
+    Print(x);
+}
+
 //Main function should always return a 32 bit integer
 fn Main() -> i32 {
     Print("My name is Lakshit");
@@ -35,5 +40,6 @@ fn Main() -> i32 {
     Print(Greet());
     PrintMessage();
     VariablesCheck();
+    AutoType();
     return 0;
 }
