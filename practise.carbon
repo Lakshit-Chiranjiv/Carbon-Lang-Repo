@@ -1,6 +1,8 @@
 //package name can be anything followed by either api or impl
 package sample api;
 
+var g1:i32 = 203;
+
 fn ReturnTen() -> i32 {
     return 10;
 }
@@ -32,6 +34,11 @@ fn AutoType() {
     Print(x);
 }
 
+fn GlobalVariables() {
+    var c:i32 = 55 + g1;
+    Print("203 + 55 = {0}",c);
+}
+
 //Main function should always return a 32 bit integer
 fn Main() -> i32 {
     Print("My name is Lakshit");
@@ -41,5 +48,6 @@ fn Main() -> i32 {
     PrintMessage();
     VariablesCheck();
     AutoType();
+    GlobalVariables();
     return 0;
 }
