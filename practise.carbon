@@ -39,6 +39,15 @@ fn GlobalVariables() {
     Print("203 + 55 = {0}",c);
 }
 
+fn MultiLineStrings() {
+    var s:auto = """
+    Hi I am Lakshit, 
+    I am a developer
+    I am happy
+    """;
+    Print(s);
+}
+
 //Main function should always return a 32 bit integer
 fn Main() -> i32 {
     Print("My name is Lakshit");
@@ -49,5 +58,6 @@ fn Main() -> i32 {
     VariablesCheck();
     AutoType();
     GlobalVariables();
+    MultiLineStrings();
     return 0;
 }
