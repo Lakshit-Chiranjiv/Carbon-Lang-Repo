@@ -66,6 +66,9 @@ fn Tuples() {
     Print("{0}",t1[3]);
     var t2: (String,i32,i32,Bool) = ("str 1",43,56,false);
     Print(t2[0]);
+
+    var t3: auto = t2;
+    Print(t3[0]);
 }
 
 //Main function should always return a 32 bit integer
