@@ -55,8 +55,10 @@ fn Add(x: i32, y: i32) -> i32 {
 fn Arrays() {
     var arr1: [i32;5] = (44,22,42,56,35);
     var arr2: [String;3] = ("hello","bye","okay");
+    var arr3: auto = (4,2,5);
     Print("{0}",arr1[3]);
     Print(arr2[1]);
+    Print("{0}",arr3[1]);
 }
 
 //Main function should always return a 32 bit integer
