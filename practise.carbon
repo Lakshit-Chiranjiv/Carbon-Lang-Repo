@@ -85,6 +85,12 @@ fn Structs() {
 
 }
 
+class Details {
+    var name: String;
+    var age: i32;
+    var passed: Bool;
+}
+
 //Main function should always return a 32 bit integer
 fn Main() -> i32 {
     Print("My name is Lakshit");
@@ -102,5 +108,12 @@ fn Main() -> i32 {
     Arrays();
     Tuples();
     Structs();
+
+    var d1: Details = {.name = "Lakshit", .age = 20, .passed = true};
+    var d2: Details = {.name = "George", .age = 17, .passed = false};
+
+    Print(d1.name);
+    Print("{0}",d2.age);
+
     return 0;
 }
