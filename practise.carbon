@@ -170,6 +170,18 @@ fn WhileLoops(){
     }
 }
 
+fn getNum(x: i32) -> i32{
+    return x;
+}
+
+fn getStr(x: String) -> String{
+    return x;
+}
+
+fn getVal[gen:! Type](x: gen) -> gen{
+    return x;
+}
+
 //Main function should always return a 32 bit integer
 fn Main() -> i32 {
     Print("My name is Lakshit");
@@ -201,5 +213,11 @@ fn Main() -> i32 {
     Pointers();
     Conditionals(19,15);
     WhileLoops();
+
+    Print("{0}",getNum(70));
+    Print(getStr("70"));
+
+    Print("{0}",getVal(30));
+    Print(getVal("30"));
     return 0;
 }
