@@ -89,6 +89,15 @@ class Details {
     var name: String;
     var age: i32;
     var passed: bool;
+
+    //class methods
+    fn getAge[me: Details]() -> i32{
+        return me.age;
+    }
+
+    fn add10ToAge[me: Details]() -> i32{
+        return me.age+10;
+    }
 }
 
 //Main function should always return a 32 bit integer
@@ -114,6 +123,8 @@ fn Main() -> i32 {
 
     Print(d1.name);
     Print("{0}",d2.age);
+    Print("{0}",d1.getAge());
+    Print("{0}",d1.add10ToAge());
 
     return 0;
 }
