@@ -124,6 +124,19 @@ fn Pointers(){
 
 }
 
+fn Conditionals(num: i32){
+    if(num == 17){
+        Print("Seventeen");
+    }
+    else if(num == 15){
+        Print("Fifteen");
+    }
+    else{
+        Print("Not Seventeen or Fifteen");
+    }
+
+}
+
 //Main function should always return a 32 bit integer
 fn Main() -> i32 {
     Print("My name is Lakshit");
@@ -153,5 +166,6 @@ fn Main() -> i32 {
     Print("{0}",Details.sendDetail().age);
 
     Pointers();
+    Conditionals(15);
     return 0;
 }
