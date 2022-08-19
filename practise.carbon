@@ -135,6 +135,23 @@ fn Conditionals(num: i32){
         Print("Not Seventeen or Fifteen");
     }
 
+    match(num) {
+        case 5 => {
+            Print("Five");
+        }
+        case 10 => {
+            Print("Ten");
+        }
+        case 15 => {
+            Print("Fifteen");
+        }
+        case 20 => {
+            Print("Twenty");
+        }
+        default => {
+            Print("Nothing");
+        }
+    }
 }
 
 //Main function should always return a 32 bit integer
