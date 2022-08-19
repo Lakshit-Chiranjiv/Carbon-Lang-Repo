@@ -124,18 +124,18 @@ fn Pointers(){
 
 }
 
-fn Conditionals(num: i32){
-    if(num == 17){
-        Print("Seventeen");
+fn Conditionals(num1: i32, num2: i32){
+    if(num1 > 17){
+        Print("Greater than Seventeen");
     }
-    else if(num == 15){
+    else if(num1 == 15){
         Print("Fifteen");
     }
     else{
         Print("Not Seventeen or Fifteen");
     }
 
-    match(num) {
+    match(num2) {
         case 5 => {
             Print("Five");
         }
@@ -183,6 +183,6 @@ fn Main() -> i32 {
     Print("{0}",Details.sendDetail().age);
 
     Pointers();
-    Conditionals(15);
+    Conditionals(19,15);
     return 0;
 }
