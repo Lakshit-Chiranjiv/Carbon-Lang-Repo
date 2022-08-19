@@ -98,6 +98,11 @@ class Details {
     fn add10ToAge[me: Details]() -> i32{
         return me.age+10;
     }
+
+    //class static functions (any normal functions in class are static and are property of class)
+    fn sendDetail() -> Details{
+        return {.name = "Some name", .age = 10, .passed = false};
+    }
 }
 
 //Main function should always return a 32 bit integer
@@ -125,6 +130,8 @@ fn Main() -> i32 {
     Print("{0}",d2.age);
     Print("{0}",d1.getAge());
     Print("{0}",d1.add10ToAge());
+    Print(Details.sendDetail().name);
+    Print("{0}",Details.sendDetail().age);
 
     return 0;
 }
