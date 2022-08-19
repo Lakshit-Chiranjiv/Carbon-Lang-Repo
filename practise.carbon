@@ -154,6 +154,22 @@ fn Conditionals(num1: i32, num2: i32){
     }
 }
 
+fn WhileLoops(){
+    var x: i32 = 10;
+
+    while(x > 0){
+        Print("x is {0}",x);
+        x = x - 1;
+    }
+
+    x = 5;
+
+    while(not(x == 0)){
+        Print("x is again {0}",x);
+        x = x - 1;
+    }
+}
+
 //Main function should always return a 32 bit integer
 fn Main() -> i32 {
     Print("My name is Lakshit");
@@ -184,5 +200,6 @@ fn Main() -> i32 {
 
     Pointers();
     Conditionals(19,15);
+    WhileLoops();
     return 0;
 }
