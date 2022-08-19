@@ -105,6 +105,25 @@ class Details {
     }
 }
 
+
+fn Pointers(){
+    var x: i32 = 7;
+    var p: i32* = &x;
+    Print("x = {0}",x);
+    *p = 99;
+    Print("x = {0}",x);
+    var q: i32* = &*p;
+    *q = 123;
+    Print("x = {0}",x);
+
+    var ss: auto = {.a = 10, .b = 20};
+    Print("ss.a = {0}",ss.a);
+    var sp: i32* = &ss.a;
+    *sp = 90;
+    Print("ss.a = {0}",ss.a);
+
+}
+
 //Main function should always return a 32 bit integer
 fn Main() -> i32 {
     Print("My name is Lakshit");
@@ -133,5 +152,6 @@ fn Main() -> i32 {
     Print(Details.sendDetail().name);
     Print("{0}",Details.sendDetail().age);
 
+    Pointers();
     return 0;
 }
