@@ -64,7 +64,7 @@ fn Arrays() {
 fn Tuples() {
     var t1: auto = (54,false,"Good morning",332);
     Print("{0}",t1[3]);
-    var t2: (String,i32,i32,Bool) = ("str 1",43,56,false);
+    var t2: (String,i32,i32,bool) = ("str 1",43,56,false);
     Print(t2[0]);
 
     var t3: auto = t2;
@@ -78,7 +78,7 @@ fn Structs() {
     car.speed = 120;
     Print("{0}",car.speed);
 
-    var st: {.x: i32, .y: Bool} = {.x = 45, .y = true};
+    var st: {.x: i32, .y: bool} = {.x = 45, .y = true};
     Print("{0}",st.x);
     st.x = 32;
     Print("{0}",st.x);
@@ -88,7 +88,7 @@ fn Structs() {
 class Details {
     var name: String;
     var age: i32;
-    var passed: Bool;
+    var passed: bool;
 }
 
 //Main function should always return a 32 bit integer
